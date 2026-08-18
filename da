@@ -1,1 +1,1 @@
-mysql -u root -p < database/database.sql
+Get-Content .\database\database.sql | mysql -u root -p
