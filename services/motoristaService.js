@@ -10,7 +10,7 @@ function validatePayload(data) {
 }
 
 function validateId(id) {
-  if (!/^\\d+$/.test(String(id)) || Number(id) <= 0) {
+  if (!/^\d+$/.test(String(id)) || Number(id) <= 0) {
     const error = new Error('ID inválido');
     error.status = 400;
     throw error;
